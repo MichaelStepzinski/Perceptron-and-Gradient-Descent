@@ -26,4 +26,13 @@ to return the total accuracy
 
     gradient_descent
 My implementation of the gradient_descent algorithm
-first defines problem size by taking the len of the x_init array
+first defines problem size by taking the len of the x_init array.
+Then it defines the starting values of the gradient descent and declares
+magnitude of the result. While the magnitude is greater than a small value,
+0.0001, gradient descent is performed. To get performance like the example
+for the first problem, I get the same [4.56719262e−05] value after 52 iterations,
+but by using 0.0001 to be the magnitude threshold, the gradient descent stops
+on that first problem around step 49 or 50. A for loop within the while loop 
+goes over the number of variables in the desired function, 
+magnitude is calculated to check if another loop is needed, and then
+the value that minimizes f is returned.
