@@ -2,7 +2,6 @@
 # Date:     October 9, 2021
 # Purpose:  CS422 Machine Learning - Perceptron implementation file
 
-import numpy as np
 
 def perceptron_train(X,Y):
 
